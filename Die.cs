@@ -79,10 +79,10 @@ namespace dice_game
             else if (Roll == 5)
             {
 
-                Console.WriteLine("-----");
-                Console.WriteLine("|o  o|");
-                Console.WriteLine("| O  |");
-                Console.WriteLine("|o  o|");
+                Console.WriteLine("------");
+                Console.WriteLine("|o   o|");
+                Console.WriteLine("|  o  |");
+                Console.WriteLine("|o   o|");
                 Console.WriteLine("------");
 
             }
