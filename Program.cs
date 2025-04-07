@@ -54,19 +54,21 @@ namespace dice_game
                     
                     die1.DrawDie();
                     die2.DrawDie();
-                
+
                 if (choice == "1" || choice == "DOUBLES")
                 {
-                     if (die1.Roll == die2.Roll)
-                        {
-                        wallet += bet * 2;
-                        Console.WriteLine($"Congratulations you got doubles! You won double your bet. You now have{wallet:c} in your wallet. Play Again and Win More!!");
-                        Console.ReadLine ();
-                        Console.WriteLine("-------------------------------------------------------------");
-                    }
-                     else 
+                    
+                    if (die1.Roll == die2.Roll)
                     {
                         
+                        wallet += bet * 2;
+                        Console.WriteLine($"Congratulations you got doubles! You won double your bet. You now have{wallet:c} in your wallet. Play Again and Win More!!");
+                        Console.ReadLine();
+                        Console.WriteLine("-------------------------------------------------------------");
+                    }
+                    else
+                    {
+
                         wallet -= bet;
                         Console.WriteLine($"Oops, not doubles. You now have {wallet:c} in your wallet. ");
                         Console.WriteLine("It's Okay if you didn't win this time, you can always try again.");
@@ -74,7 +76,7 @@ namespace dice_game
                         Console.WriteLine("-------------------------------------------------------------");
                     }
 
-                    
+
                 }
                 else if (choice == "2" || choice == "NOT DOUBLES")
                 {
@@ -137,6 +139,11 @@ namespace dice_game
                     }
 
                 }
+                else if (choice == "Q" || choice == "Quit" || choice == "5")
+
+                    Console.WriteLine($"Your account balance {wallet:c}.");
+                Console.ReadLine();
+                
                 else
                 {
                     Console.WriteLine("Hit ENTER to Continue");
