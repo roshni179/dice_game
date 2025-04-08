@@ -57,10 +57,10 @@ namespace dice_game
 
                 if (choice == "1" || choice == "DOUBLES")
                 {
-                    
+
                     if (die1.Roll == die2.Roll)
                     {
-                        
+
                         wallet += bet * 2;
                         Console.WriteLine($"Congratulations you got doubles! You won double your bet. You now have{wallet:c} in your wallet. Play Again and Win More!!");
                         Console.ReadLine();
@@ -139,11 +139,7 @@ namespace dice_game
                     }
 
                 }
-                else if (choice == "Q" || choice == "Quit" || choice == "5")
-
-                    Console.WriteLine($"Your account balance {wallet:c}.");
-                Console.ReadLine();
-                
+               
                 else
                 {
                     Console.WriteLine("Hit ENTER to Continue");
@@ -161,11 +157,12 @@ namespace dice_game
                 
             }
 
+              
+          
 
 
 
 
-                 
 
         }
   }
